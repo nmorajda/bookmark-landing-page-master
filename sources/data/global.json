@@ -1,0 +1,224 @@
+{
+  "head": {
+    "html": {
+      "attrs": {
+        "class": "no-js",
+        "lang": "en",
+        "dir": "ltr"
+      }
+    },
+    "robots": "",
+    "title": "Frontend Mentor | Insure Landing Page",
+    "description": "Frontend Mentor | Insure Landing Page",
+    "fonts": "https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap",
+    "styles": [],
+    "scripts": []
+  },
+
+  "brand": {
+    "link": {
+      "attrs": {
+        "href": "/index.html",
+        "title": "Frontend Mentor | Insure Landing Page",
+        "class": "logo__link"
+      }
+    },
+    "img": {
+      "attrs": {
+        "src": "images/logo.svg",
+        "class": "logo__img",
+        "alt": "Logo"
+      }
+    }
+  },
+
+  "menu": {
+    "mainMenu": {
+      "items": [
+        {
+          "anchor": "Features",
+          "attrs": { "href": "#"}
+        },
+        {
+          "anchor": "Pricing",
+          "attrs": { "href": "#"}
+        },
+        {
+          "anchor": "Contact",
+          "attrs": { "href": "#"}
+        }
+      ],
+      "button": {
+        "text": "Login",
+        "attrs": {
+          "class": "btn btn--dark header__btn"
+        }
+      }
+    }
+  },
+  
+  "hero": {
+    "heading": "A Simple Bookmark Manager",
+    "subheading": "A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.",
+    "buttons": [
+      {
+        "text": "Get it on Chrome",
+        "attrs": {
+          "class": "btn btn--primary hero__btn"
+        }
+      },
+      {
+        "text": "Get it on Firefox",
+        "attrs": {
+          "class": "btn btn--grey hero__btn"
+        }
+      }
+    ]
+  },
+
+  "features": {
+    "heading": "Features",
+    "subheading": "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.",
+    "items": [
+      {
+        "active": true,
+        "id": "tab1",
+        "heading": "Simple Bookmarking",
+        "img": "illustration-features-tab-1.svg",
+        "title": "Bookmark in one click",
+        "text": "  Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
+        "button": {
+          "text": "More info",
+          "attrs": {
+            "class": "btn btn--primary features__btn"
+          }
+        }
+      },
+      {
+        "id": "tab2",
+        "heading": "Speedy Searching",
+        "img": "illustration-features-tab-2.svg",
+        "title": "Intelligent search",
+        "text": "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
+        "button": {
+          "text": "More info",
+          "attrs": {
+            "class": "btn btn--primary features__btn"
+          }
+        }
+      },
+      {
+        "id": "tab3",
+        "heading": "Easy Sharing",
+        "img": "illustration-features-tab-3.svg",
+        "title": "Share your bookmarks",
+        "text": "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
+        "button": {
+          "text": "More info",
+          "attrs": {
+            "class": "btn btn--primary features__btn"
+          }
+        }
+      }      
+    ]
+  },
+
+  "downloads": {
+    "heading": "Download the extension",
+    "subheading": "We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.",
+    "items": [
+      {
+        "logo": "logo-chrome.svg",
+        "title": "Add to Chrome",
+        "text": "Minimum version 62",
+        "buttons": {
+          "text": "Add & Install Extension",
+          "attrs": {
+            "class": "btn btn--primary download__btn"
+          }
+        }
+      },
+      {
+        "logo": "logo-firefox.svg",
+        "title": "Add to Firefox",
+        "text": "Minimum version 55",
+        "buttons": {
+          "text": "Add & Install Extension",
+          "attrs": {
+            "class": "btn btn--primary download__btn"
+          }
+        }
+      },
+      {
+        "logo": "logo-opera.svg",
+        "title": "Add to Opera",
+        "text": "Minimum version 46",
+        "buttons": {
+          "text": "Add & Install Extension",
+          "attrs": {
+            "class": "btn btn--primary download__btn"
+          }
+        }
+      }
+    ]
+  },
+
+  "faqs": {
+    "heading": "Frequently Asked Questions",
+    "subheading": "Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.",
+    "button": {
+      "text": "More Info",
+      "attrs": {
+        "class": "btn btn--primary btn__faq"
+      }
+    },
+    "items": [
+      {
+        "question": "What is Bookmark?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis."
+      },
+      {
+        "question": "How can I request a new browser?",
+        "answer": "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet."
+      },
+      {
+        "question": "Is there a mobile app?",
+        "answer": "Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum."
+      },
+      {
+        "question": "What about other Chromium browsers?",
+        "answer": "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit."
+      }
+    ]
+  },
+
+  "cta": {
+    "subheading": "35,000+ already joined",
+    "heading": "Stay up-to-date with what we’re doing",
+    "button": {
+      "text": "Contact Us",
+      "attrs": {
+        "class": "btn btn--secondary btn__cta"
+      }      
+    }
+  },
+
+  "socials": [
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com",
+      "title": "",
+      "id": "#icon-facebook"
+    },
+    {
+      "name": "Twitter",
+      "href": "https://www.twitter.com",
+      "title": "",
+      "id": "#icon-twitter"
+    }
+  ],
+
+  "footer": {
+    "copyright": "Challenge by <a href=\"https://www.frontendmentor.io\">Frontend Mentor</a>. Coded by <a href=\"https://github.com/nmorajda\">N. Morajda</a>"
+  }
+}

@@ -1,0 +1,170 @@
+.header {
+    position: relative;
+    padding: 4rem 0;
+
+    &.mobile-nav--active {
+        @media (max-width: 799px)
+        {
+            .header__logo {
+                * {
+                    fill: $light;
+                }
+        
+                path.bookmark {
+                    fill: $dark;
+                }
+            }
+    
+            .header__nav {
+                opacity: 1;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &__social {
+                    opacity: 1;
+                    margin-bottom: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .header__nav__item {
+                        width: initial;
+                        margin: 0 2rem;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__container {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        position: relative;
+        z-index: 11;
+        width: 14.5rem;
+        height: 2.5rem;
+    }
+
+    &__button {
+        position: relative;
+        z-index: 11;
+        @media (min-width: $breakpoint) {
+            display: none;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 0;
+        background-color: rgba($dark, 0.95);
+        z-index: 2;
+        opacity: 0;
+        display: none;
+
+        // desktop menu
+        @media (min-width: $breakpoint) {
+            display: block;
+            position: initial;
+            top: initial;
+            left: initial;
+            width: initial;
+            height: initial;
+            padding-top: 0;
+            background-color: transparent;
+            opacity: 1;
+
+        }
+
+        &__list {
+            list-style: none;
+            padding-top: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (min-width: $breakpoint) {
+                padding-top: 0;
+                flex-direction: row;
+            }
+        }
+
+        &__social {
+            display: none;
+            opacity: 0;
+
+        }
+
+        &__item {
+            width: 100%;
+            max-width: 32rem;
+            padding: 2rem 0;
+            border-top: 1px solid $border-color;
+            @media (min-width: $breakpoint) {
+                &:not(:last-child) {
+                    margin-right: 4.8rem;
+                }
+
+                margin-bottom: 0;
+                padding: 0;
+                border: 0;
+            }
+        }
+
+        &__link {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 2rem;
+            letter-spacing: 1.5px;
+            color: $light;
+
+            @media (min-width: $breakpoint) {
+                font-size: 1.3rem;
+                letter-spacing: initial;
+                color: $dark;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        @media (max-width: 799px) {
+            width: 100%;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-weight: $font-weight-normal;
+            letter-spacing: 1px;
+            color: $light;
+            border: 2px solid $light;
+            border-radius: $border-radius-sm;
+        }
+
+        @media (min-width: $breakpoint)
+        {
+            padding: .4rem 3.2rem;
+            color: $light;
+            background-color: $secondary;
+            border-color: $secondary;
+            &:hover {
+                color: $secondary;
+                background-color: transparent;
+            }
+        }
+    }
+}

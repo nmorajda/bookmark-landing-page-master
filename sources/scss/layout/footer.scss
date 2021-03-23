@@ -1,0 +1,105 @@
+.footer {
+    padding: 4rem 0;
+    background-color: $dark;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $breakpoint) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__nav {
+    @media (min-width: $breakpoint) {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      margin-bottom: 3rem;
+      @media (min-width: $breakpoint) {
+        margin-right: 7rem;
+        margin-bottom: 0;
+      }
+
+      .text {
+        fill: $light;
+      }
+    }
+
+    &__list {
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $breakpoint) {
+        flex-direction: row;
+        margin-bottom: 0;
+      }
+    }
+    
+    &__link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
+      font-weight: $font-weight-bold;
+      letter-spacing: 2px;
+      color: $light;
+
+      @media (min-width: $breakpoint) {
+        margin-bottom: 0;
+        margin-right: 3rem;
+      }
+
+      &:hover,
+      &:focus {
+        color: $secondary;
+      }
+    }
+  }
+
+  &__socials {
+    .footer__nav__link {
+      margin: 0 2rem;
+      * {
+        fill: $secondary;
+      }
+    }
+  }
+
+  &__copyright {
+      padding-top: 6rem;
+      .attribution {
+          max-width: 28rem;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 1.3rem;
+          font-weight: $font-weight-bold;
+          letter-spacing: 2px;          
+          line-height: 1.6;
+          color: $grey;
+
+          a {
+            font-size: 1.3rem;
+
+            color: $light;
+
+              &:hover,
+              &:focus {
+                  color: $secondary;
+              }
+          }
+      }
+  }
+}

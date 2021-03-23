@@ -1,0 +1,17 @@
+mixin features({ features } = data)
+    section.section.features
+        .container.features__container
+            h2.section__heading.features__heading #{features.heading}
+            p.section__lead.features__lead #{features.subheading}
+            ul.tabs
+                each item in features.items 
+                    li.tabs__tab(data-id=item.id role="button" tabindex=0 class=('active' in item === true ? 'active' : ''))  !{item.heading}
+            each item in features.items 
+                .tab-content.feature(id=item.id class=('active' in item === true ? 'active' : ''))
+                    .feature__illustration-wrapper
+                        img(src=pathToFile+'images/'+item.img, alt="Image")
+                    .feature__text-wrapper
+                        h3.feature__heading #{item.title}
+                        p.feature__subheading !{item.text}
+                        +button(item.button)
+                            | #{item.button.text}

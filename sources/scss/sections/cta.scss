@@ -1,0 +1,68 @@
+.cta {
+    margin-bottom: 0;
+    padding: 6.4rem 0;
+    background-color: $primary;
+
+    &__container {
+        max-width: 42rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 600px)
+        {
+            max-width: 52rem;
+        }
+    }
+
+    &__subheading {
+        margin-bottom: 2.4rem;
+        color: $light;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+
+    &__heading {
+        margin-bottom: 3.2rem;
+        text-align: center;
+        color: $light;
+        font-weight: $font-weight-bold;
+    }
+
+    &__input__wrapper {
+        @media (min-width: 600px)
+        {
+            margin-right: 2rem;
+            flex: 3;
+        }
+    }
+
+    &__btn__wrapper {
+        flex: 1;
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 32rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 600px)
+        {
+            max-width: initial;
+            flex-direction: row;
+            align-items: flex-start;
+
+        }
+
+        .form__field {
+            width: 100%;
+        }
+
+        input, button {
+            width: 100%;
+        }
+    }
+}

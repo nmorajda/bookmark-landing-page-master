@@ -1,0 +1,13 @@
+mixin cta({cta} = data)
+    section.section.cta
+        .container.cta__container
+            p.section__subheading.cta__subheading #{cta.subheading}
+            h3.section__heading.cta__heading #{cta.heading}
+            form.form.cta__form(action="#" novalidate) 
+                .form__field.cta__input__wrapper
+                    label.sr-only(for="stayUpToDate") Enter your email address
+                    input(id="stayUpToDate" type="email" placeholder="Enter your email address" aria-labelledby="form-heading" required data-error-message="Whoops, make sure it's email")
+                    span.form__field__message
+                .form__field.cta__btn__wrapper
+                    +button({attrs: cta.button.attrs}) 
+                        | #{cta.button.text}

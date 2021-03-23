@@ -1,0 +1,98 @@
+.features {
+
+    &:before {
+        position: absolute;
+        content: '';
+        top: 60rem;
+        right: 20vw;
+        width: 80rem;
+        height: 53vw;
+        max-height: 32rem;
+        background-color: $primary;
+        border-radius: 100rem;
+        z-index: -1;
+
+        @media (min-width: $breakpoint)
+        {
+            top: 47rem;
+            right: 56vw;
+            width: 160rem;
+            height: 35rem;
+            max-height: initial;
+        }
+    }
+
+    .tabs__tab {
+        @media (min-width: $breakpoint)
+        {
+            width: 33%;
+        }
+    }
+
+    .feature {
+        &.active {
+            @media (min-width: $breakpoint)
+            {
+                height: 40rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+        }
+
+
+        &__illustration-wrapper {
+            height: 75.7vw;
+            max-height: 43rem;
+            margin-bottom: 4rem;
+
+            @media (min-width: $breakpoint)
+            {
+
+                width: 50%;
+                height: auto;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__text-wrapper {
+            @media (min-width: $breakpoint)
+            {
+                
+                flex: 0 1 45rem;
+                padding-left: 6rem;
+                align-self: center;
+            }
+        }
+
+        &__heading {
+            margin-bottom: 1rem;
+            font-size: 2.4rem;
+            font-weight: $font-weight-bold;
+            @media (min-width: $breakpoint)
+            {
+                font-size: 3.2rem;
+            }
+
+        }
+
+        &__subheading {
+            margin-bottom: 3.2rem;
+            line-height: 1.6;
+            font-size: 1.4rem;
+            color: $grey;
+            @media (min-width: $breakpoint)
+            {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+
+}

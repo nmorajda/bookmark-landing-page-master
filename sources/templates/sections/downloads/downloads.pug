@@ -1,0 +1,16 @@
+mixin downloads({ downloads } = data.downloads)
+    section.section.downloads 
+        .container.downloads__container
+            h2.section__heading.downloads__heading #{downloads.heading}
+            p.section__lead.downloads__lead #{downloads.subheading}
+            .downloads__items
+                each item in downloads.items
+                    .download-box
+                        .download-box__img 
+                            img(src=pathToFile+'images/'+item.logo, alt=item.title)
+                        .download-box__text 
+                            h4.download-box__heading #{item.title}
+                            p.download-box__subheading #{item.text}
+                        .download-box__footer 
+                            +button(item.buttons)
+                                | #{item.buttons.text}

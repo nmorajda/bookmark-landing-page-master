@@ -1,0 +1,13 @@
+mixin faqs({ faqs } = data)
+    section.section.faqs 
+        .container.faqs__container
+            h2.section__heading.faqs__heading #{faqs.heading}
+            p.section__lead.faqs__lead #{faqs.subheading}
+            .accordion.faqs__accordion
+                each item in faqs.items 
+                    details.accordion__details.faq__item
+                        summary.accordion__summary.faq__question #{item.question}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+                        .accordion__content.faq__answer !{item.answer}
+            +button(faqs.button)
+                | #{faqs.button.text}

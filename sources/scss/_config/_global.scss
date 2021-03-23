@@ -1,0 +1,27 @@
+$breakpoint: 800px;
+$container-max-width: 110.5rem;
+
+// colors
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+$grayish-blue: hsl(229, 8%, 60%);
+$very-dark-blue: hsl(229, 31%, 21%);
+
+$primary: $soft-blue;
+$secondary: $soft-red;
+$light: white;
+$grey: $grayish-blue;
+$grey-light: #f7f7f7;
+$dark: $very-dark-blue;
+
+$border-color: $grey;
+$border-primary-light: 1px solid rgba($border-color, 0.4);
+$border-radius-sm: 3px;
+
+$button-box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, .2);
+
+$font-family-primary: 'Rubik', sans-serif;
+$font-family-secondary: 'Rubik', sans-serif;
+$font-size-primary: 1.8rem;
+$font-weight-normal: 400;
+$font-weight-bold: 500;

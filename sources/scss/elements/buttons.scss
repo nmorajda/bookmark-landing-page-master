@@ -1,0 +1,109 @@
+button,
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: .8rem 1.6rem;
+    font-size: 1.4rem;
+    font-weight: $font-weight-bold;
+    line-height: 2;
+    letter-spacing: 0.25px;
+    color: $dark;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: .5rem;
+    cursor: pointer;
+    
+    transition: all .3s, outline 0s;
+}
+
+.btn {
+    &--primary {
+        color: $light;
+        background-color: $primary;
+        border-color: $primary;
+        box-shadow: $button-box-shadow;
+
+        &:hover {
+            color: $primary;
+            background-color: $light;
+        }
+    };
+
+    &--secondary {
+        color: $light;
+        background-color: $secondary;
+        border-color: $secondary;
+        box-shadow: $button-box-shadow;
+
+        &:hover {
+            color: $secondary;
+            background-color: $light;
+        }
+    };
+
+    &--grey {
+        color: $dark;
+        background-color: $grey-light;
+        border-color: $grey-light;
+        box-shadow: $button-box-shadow;
+        opacity: .8;
+
+        &:hover {
+            color: $secondary;
+            background-color: $light;
+            border-color: $dark;
+        }
+    }
+
+    &--dark {
+        &:hover {
+            color: $light;
+            background-color: $dark;
+        }
+    }
+
+    &--light {
+        color: $light;
+        border-color: $light;
+        &:hover {
+            color: $dark;
+            background-color: $light;
+        }
+    }
+    
+    &-hamburger {
+        padding: 8px 5px;
+        outline: none;
+        border: 0;
+
+        span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background-color: $dark;
+
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+
+        &--open {
+            
+            span {
+                background-color: $light;
+                
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(3px, 4px);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(3px, -4px);
+                }                
+            }            
+        }
+    }
+}

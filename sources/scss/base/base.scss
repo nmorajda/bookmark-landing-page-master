@@ -1,0 +1,71 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*:focus {
+  outline: 2px dotted $grey;
+  outline-offset: 2px;
+}
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+  font-weight: $font-weight-normal;
+  overflow-x: hidden;
+  text-align: center;
+
+  @media (min-width: $breakpoint) {
+    text-align: left;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-secondary;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* links */
+a {
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+/* Images */
+img {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;  
+}
